@@ -1,0 +1,40 @@
+:root,
+[data-bs-theme="dark"] {
+  --bs-body-color: #d4d9dd;
+  --bs-body-color-rgb: 173, 181, 189;
+  --bs-body-bg: #261c2c !important;
+  --bs-body-bg-rgb: 33, 37, 41;
+  --site-color-dark: #261c2c;
+  --site-color-secondary-dark: #3e2c41;
+  --site-color-primary: #5c527f;
+  --site-color-very-light: #6e85b2;
+}
+.bg-site-dark {
+  background-color: var(--bs-body-bg);
+}
+.bg-secondary-dark {
+  background-color: var(--site-color-secondary-dark);
+}
+.form-control:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.output-box {
+  height: 70vh;
+}
+#response-text {
+  background-color: var(--site-color-dark);
+  padding: 15px 12px;
+  max-width: 85%;
+  border-radius: 20px 20px 20px 0px;
+  margin-bottom: 15px;
+}
+#prompt-text {
+  background-color: var(--site-color-primary);
+  padding: 15px 12px;
+  max-width: 85%;
+  border-radius: 20px 20px 0px 20px;
+  margin-bottom: 15px;
+  transform: translateX(18%);
+}
