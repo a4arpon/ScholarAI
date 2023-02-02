@@ -11,7 +11,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $uid = $user_log['id'];
         if (password_verify($pwd, $user_log['auth_key'])) {
             $ip_update = $con->query("UPDATE `users` SET `uip`='$uip' WHERE `id`='$uid'");
+            // Record User IP
+            $record_ip = $con->query("INSERT INTO `ip_tracks`(`uid`, `uip`) VALUES ('$uid','$uip')");
             setcookie("uip", $uip, time() + (86400 * 90), "/"); // Set Cookies
+            setcookie("ukey", $user_log['auth_key'], time() + (86400 * 90), "/"); // Set Cookies
             header("location:../../app/"); // Redirect User
         }else {
             echo "<h1>Password Incorrect</h1>";

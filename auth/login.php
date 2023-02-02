@@ -1,3 +1,10 @@
+<?php
+include('../core/db.php');
+if (!isset($_COOKIE['uip'])) {
+   
+} elseif (isset($_COOKIE['uip'])) {
+    header("location:../app/");
+}?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,11 +29,13 @@
                 <div class="card-body">
                     <form action="../core/auth_core/login_core.php" method="post">
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                                name="email">
                             <label for="floatingInput">Email address</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="pwd">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                                name="pwd">
                             <label for="floatingPassword">Password</label>
                         </div>
                         <button class="btn btn-primary w-100 fw-bolder">Login</button>

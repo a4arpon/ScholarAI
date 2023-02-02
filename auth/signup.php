@@ -1,3 +1,10 @@
+<?php
+include('../core/db.php');
+if (!isset($_COOKIE['uip'])) {
+   
+} elseif (isset($_COOKIE['uip'])) {
+    header("location:../app/");
+}?>
 <!DOCTYPE html>
 <html lang="en">
 

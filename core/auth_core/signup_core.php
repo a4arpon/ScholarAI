@@ -18,7 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $SQL = "INSERT INTO `users`(`uip`,`name`, `email`, `phone`, `institute`, `auth_key`, `trxid`) VALUES ('$uip','$name','$email','$phone','$institute','$auth_key','$trxid')";
         $Query = $con->query($SQL);
         if ($Query == true) {
-            setcookie("uip", $uip, time() + (86400 * 90), "/"); // Set Cookies
+            setcookie("uip", $uip, time() + (86400 * 90), "/");
+            setcookie("ukey", $auth_key, time() + (86400 * 90), "/"); // Set Cookies
             header("location:../../app/"); // Redirect User
         } else {
             echo ("Signup Error");

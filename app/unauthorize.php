@@ -23,24 +23,46 @@
                     $error = $_GET['user_error'];
                     if ($error == "no_package") {
                         ?>
-                        <div class="alert alert-primary p-5 border-2">
-                            <h2>Please wait while until we approve your account.</h2>
+                        <div class="alert alert-primary p-5 border-2 text-justify">
+                            <h2>
+                                Please wait while until we approve your account.
+                            </h2>
                         </div>
                     <?php
                     } elseif ($error == "expired_package") {
                         ?>
-                        <div class="alert alert-warning p-5 border-2">
-                            <h2>Your ScholarAI account has expired, please recharge. </h2>
+                        <div class="alert alert-warning p-5 border-2 text-justify">
+                            <h2>
+                                Your ScholarAI account has expired, please recharge.
+                            </h2>
                         </div>
                     <?php
                     } elseif ($error == "account_suspected") {
                         ?>
-                        <div class="alert alert-warning p-5 border-2">
-                            <h2>Your ScholarAI account has expired, please recharge. </h2>
+                        <div class="alert alert-warning p-5 border-2 text-justify">
+                            <h2>
+                                Your account has been paused due to suspicious login or activity. Feel free to discuss this
+                                matter with us as soon as possible. Then we will take some action regarding it soon.
+                            </h2>
+                        </div>
+                    <?php
+                    } elseif ($error == "account_suspend") {
+                        ?>
+                        <div class="alert alert-danger p-5 border-2 text-justify">
+                            <h2>
+                                Your account has been suspended as you have violated our policy despite multiple warnings. You
+                                are requested to contact us soon.
+                            </h2>
                         </div>
                     <?php
                     } else {
-
+                        ?>
+                        <div class="alert alert-info p-5 border-2 text-justify">
+                            <h2>
+                                Unknown Error
+                            </h2>
+                        </div>
+                    <?php
                     }
 
                 }
@@ -48,6 +70,15 @@
                 ?>
             </div>
             <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 text-center">
+                <div class="fs-1">
+                    <span class="fs-4">©2023 Copyright</span> ScholarAI
+                </div>
+            </div>
+            <div class="col-md-3"></div>
         </div>
     </div>
 </body>
