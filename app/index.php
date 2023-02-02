@@ -1,3 +1,7 @@
+<?php
+include('../core/db.php'); 
+include('../core/app_core/check_auth.php'); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 

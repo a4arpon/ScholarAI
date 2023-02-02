@@ -20,13 +20,13 @@
                     <h1 class="text-center">ScholarAI</h1>
                 </div>
                 <div class="card-body">
-                    <form action="" method="post">
+                    <form action="../core/auth_core/login_core.php" method="post">
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
                             <label for="floatingInput">Email address</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="pwd">
                             <label for="floatingPassword">Password</label>
                         </div>
                         <button class="btn btn-primary w-100 fw-bolder">Login</button>
