@@ -33,7 +33,7 @@
                         ?>
                         <div class="alert alert-warning p-5 border-2 text-justify">
                             <h2>
-                                Your ScholarAI account has expired, please recharge.
+                                Your ScholarAI account has expired, please recharge. <a href="./recharge.php">Click to recharge.</a>
                             </h2>
                         </div>
                     <?php
