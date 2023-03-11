@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../res/style.css">
     <title>ScholarAI - AI Based Student Access</title>
 </head>
-
 <body data-bs-theme="dark">
     <div class="container py-5">
         <div class="row">
