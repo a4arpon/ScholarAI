@@ -25,7 +25,7 @@
                         ?>
                         <div class="alert alert-primary p-5 border-2 text-justify">
                             <h2>
-                                Please wait while until we approve your account.vsdvsd dsdds
+                                Please wait while until we approve your account.
                             </h2>
                         </div>
                     <?php

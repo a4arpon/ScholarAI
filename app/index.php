@@ -1,6 +1,6 @@
 <?php
-include('../core/db.php'); 
-include('../core/app_core/check_auth.php'); 
+include('../core/db.php');
+include('../core/app_core/check_auth.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,8 +31,7 @@ include('../core/app_core/check_auth.php');
                         <div class="input-group">
                             <input type="text" class="form-control p-3" id="prompt_input" required
                                 placeholder="Ask any question here....">
-                            <button class="btn btn-primary" onclick="nulls()"><i
-                                    class="bi bi-question fs-2"></i></button>
+                            <button class="btn btn-primary" onclick="nulls()"><i class="bi bi-question fs-2"></i></button>
                         </div>
                     </div>
                 </div>

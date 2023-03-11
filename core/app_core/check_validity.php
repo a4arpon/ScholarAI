@@ -17,11 +17,9 @@ if ($get_data_from_validity->num_rows == 1) {
         } else {
             header("location:./unauthorize.php?user_error=engine_not_found");
         }
-
     } else {
         header("location:./unauthorize.php?user_error=expired_package");
     }
-
 } else {
     header("location:./unauthorize.php?user_error=account_dual");
 }
