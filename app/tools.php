@@ -21,39 +21,59 @@ include('../core/app_core/check_auth.php');
             <div class="col-md-8">
                 <div class="card bg-secondary-dark border-3">
                     <div class="card-header">
-                        <h1 class="">Red Cap ToolBox</h1>
+                        <h1 class="fw-bolder">Red Cap ToolBox</h1>
                     </div>
                     <div class="card-body overflow-y-scroll output-box">
                         <div class="row row-cols-2 row-cols-md-3">
                             <div class="col p-2">
-                                <a class="btn btn-primary h-100 w-100 py-4 fs-2 fw-bolder" href="./tool.php?type=blog-writer">Blog Write</a>
+                                <a class="btn btn-primary h-100 w-100 py-4 fs-2 fw-bolder"
+                                    href="./tool.php?type=blog-writer">Blog Write</a>
                             </div>
                             <div class="col p-2">
-                                <a class="btn btn-primary h-100 w-100 py-4 fs-2 fw-bolder" href="./tool.php?type=blog-writer">YT Script</a>
+                                <a class="btn btn-primary h-100 w-100 py-4 fs-2 fw-bolder"
+                                    href="./tool.php?type=blog-writer">YT Script</a>
                             </div>
                             <div class="col p-2">
-                                <a class="btn btn-primary h-100 w-100 py-4 fs-2 fw-bolder" href="./tool.php?type=blog-writer">KeyWord Research</a>
+                                <a class="btn btn-primary h-100 w-100 py-4 fs-2 fw-bolder"
+                                    href="./tool.php?type=blog-writer">KeyWord Research</a>
                             </div>
                             <div class="col p-2">
-                                <a class="btn btn-primary h-100 w-100 py-4 fs-2 fw-bolder" href="./tool.php?type=blog-writer">Copywriting</a>
+                                <a class="btn btn-primary h-100 w-100 py-4 fs-2 fw-bolder"
+                                    href="./tool.php?type=blog-writer">Copywriting</a>
                             </div>
                             <div class="col p-2">
-                                <a class="btn btn-primary h-100 w-100 py-4 fs-2 fw-bolder" href="./tool.php?type=blog-writer">Social Post</a>
+                                <a class="btn btn-primary h-100 w-100 py-4 fs-2 fw-bolder"
+                                    href="./tool.php?type=blog-writer">Social Post</a>
                             </div>
                             <div class="col p-2">
-                                <a class="btn btn-primary h-100 w-100 py-4 fs-2 fw-bolder" href="./tool.php?type=blog-writer">Tagline</a>
+                                <a class="btn btn-primary h-100 w-100 py-4 fs-2 fw-bolder"
+                                    href="./tool.php?type=blog-writer">Tagline</a>
                             </div>
                             <div class="col p-2">
-                                <a class="btn btn-primary h-100 w-100 py-4 fs-2 fw-bolder" href="./tool.php?type=blog-writer">Paragraph Expand</a>
+                                <a class="btn btn-primary h-100 w-100 py-4 fs-2 fw-bolder"
+                                    href="./tool.php?type=blog-writer">Paragraph Expand</a>
                             </div>
                             <div class="col p-2">
-                                <a class="btn btn-primary h-100 w-100 py-4 fs-2 fw-bolder" href="./tool.php?type=blog-writer">Paragraph Shorten</a>
+                                <a class="btn btn-primary h-100 w-100 py-4 fs-2 fw-bolder"
+                                    href="./tool.php?type=blog-writer">Paragraph Shorten</a>
+                            </div>
+                            <div class="col p-2">
+                                <a class="btn btn-primary h-100 w-100 py-4 fs-2 fw-bolder"
+                                    href="./tool.php?type=blog-writer">Outline Generator
+                                </a>
+                            </div>
+                            <div class="col p-2">
+                                <a class="btn btn-primary h-100 w-100 py-4 fs-2 fw-bolder"
+                                    href="./tool.php?type=blog-writer">FAQ Generator
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <?php include('./sidebar.php') ?>
+            </div>
         </div>
     </div>
     <script src="../res/bs/js/bootstrap.bundle.min.js"></script>
