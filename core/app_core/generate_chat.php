@@ -1,11 +1,10 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    # code...
     // Set up the OpenAI API endpoint
     $url = "https://api.openai.com/v1/engines/text-davinci-003/completions";
 
     // Set your OpenAI API key
-    $api_key = "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";
+    $api_key = "sk-" . $_SESSION['temp_key'];
 
     // Set up the request headers
     $headers = array(
@@ -42,5 +41,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo ("NodeMon Error");
 }
 
-
+// Get client IP address
+function get_client_ip()
+{
+    $ipaddress = '';
+    if (isset($_SERVER['HTTP_CLIENT_IP']))
+        $ipaddress = $_SERVER['HTTP_CLIENT_IP'];
+    else if (isset($_SERVER['HTTP_X_FORWARDED_FOR']))
+        $ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    else if (isset($_SERVER['HTTP_X_FORWARDED']))
+        $ipaddress = $_SERVER['HTTP_X_FORWARDED'];
+    else if (isset($_SERVER['HTTP_FORWARDED_FOR']))
+        $ipaddress = $_SERVER['HTTP_FORWARDED_FOR'];
+    else if (isset($_SERVER['HTTP_FORWARDED']))
+        $ipaddress = $_SERVER['HTTP_FORWARDED'];
+    else if (isset($_SERVER['REMOTE_ADDR']))
+        $ipaddress = $_SERVER['REMOTE_ADDR'];
+    else
+        $ipaddress = 'UNKNOWN';
+    return $ipaddress;
+}
 ?>

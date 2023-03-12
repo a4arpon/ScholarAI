@@ -34,6 +34,7 @@ if ($get_data_from_validity->num_rows == 1) {
 
             // Get the engine's API key
             $engine_key = $engine['api_key'];
+            $_SESSION['temp_key'] = $engine_key;
         } else {
             // Redirect the user to an unauthorize page with an error message
             header("location:./unauthorize.php?user_error=engine_not_found");
