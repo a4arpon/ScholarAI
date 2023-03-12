@@ -12,7 +12,7 @@ if (!isset($_COOKIE['uip']) && !isset($_COOKIE['ukey'])) {
         $user = $check_qry->fetch_assoc();
         if ($user['Ugroup'] > 0) {
             // User Email and ID here for validity reason
-            $user_id = $user['id'];
+            $user_id = $user['uid'];
             $user_email = $user['email'];
         } else {
             header("location:./unauthorize.php?user_error=no_package");
@@ -91,8 +91,8 @@ if (!isset($_COOKIE['uip']) && !isset($_COOKIE['ukey'])) {
                                 <label for="floatingPassword">Enter Password</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="password" class="form-control" id="floatingPassword" placeholder="TrxID" name="trxid">
-                                <label for="floatingPassword">Enter TrxID</label>
+                                <input type="text" class="form-control" id="floatingTrxID" placeholder="TrxID" name="trxid">
+                                <label for="floatingTrxID">Enter TrxID</label>
                             </div>
                             <button class="btn btn-danger w-100 fw-bolder">Recharge</button>
                         </form>

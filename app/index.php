@@ -26,6 +26,9 @@ include('../core/app_core/check_auth.php');
                     <div class="card-body overflow-y-scroll output-box" id="response_container">
                         <!-- <div class="prompt-text d-none"></div> -->
                         <!-- <div class="response-text d-none"></div> -->
+                        <div class="alert alert-warning fs-4">
+                            ChatBeast can generate answer under only 40 words.
+                        </div>
                     </div>
                     <div class="card-footer">
                         <div class="input-group">

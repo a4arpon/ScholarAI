@@ -18,8 +18,14 @@ const triggerChat = async () => {
     document.getElementById("trigerButton").setAttribute("disabled", true);
     // Update the HTML content of the response container with the response collector
     response_container.innerHTML = response_collector;
+    // Create the data payload
+    let dataSeconday = new URLSearchParams();
+    dataSeconday.append("input", input);
     // Send a request to the server with the user's input
-    let fData = await fetch(`../core/app_core/generate.php?input=${input}`);
+    let fData = await fetch(`../core/app_core/generate_chat.php`, {
+      method: "POST",
+      body: dataSeconday,
+    });
     // Get the response data as text
     let data = await fData.text();
     // Add the response data to the response collector
@@ -28,6 +34,8 @@ const triggerChat = async () => {
     response_container.innerHTML = await response_collector;
     // Re-enable the trigger button
     document.getElementById("trigerButton").removeAttribute("disabled", true);
+    // auto scroll down
+    response_container.scrollTop = response_container.scrollHeight;
   } else {
     // Display an alert if the input value is not valid
     alert("Enter Correct Value");
