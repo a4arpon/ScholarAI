@@ -12,7 +12,7 @@ include('../core/app_core/check_auth.php');
     <link rel="stylesheet" href="../res/bs/css/bootstrap.min.css">
     <link rel="stylesheet" href="../res/bs/icons/bootstrap-icons.css">
     <link rel="stylesheet" href="../res/style.css">
-    <title>ScholarAI - AI Based Student Access</title>
+    <title>Red Cap - AI Based Student Access</title>
 </head>
 
 <body data-bs-theme="dark">
@@ -21,7 +21,7 @@ include('../core/app_core/check_auth.php');
             <div class="col-md-8">
                 <div class="card bg-secondary-dark border-3">
                     <div class="card-header">
-                        <h1 class="">ScholarAI QNA</h1>
+                        <h1 class="">Red Cap QNA</h1>
                     </div>
                     <div class="card-body overflow-y-scroll output-box">
                         <div id="prompt-text d-none"></div>

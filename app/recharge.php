@@ -34,7 +34,7 @@ if (!isset($_COOKIE['uip']) && !isset($_COOKIE['ukey'])) {
     <link rel="stylesheet" href="../res/bs/css/bootstrap.min.css">
     <link rel="stylesheet" href="../res/bs/icons/bootstrap-icons.css">
     <link rel="stylesheet" href="../res/style.css">
-    <title>ScholarAI - AI Based Student Access</title>
+    <title>Red Cap - AI Based Student Access</title>
 </head>
 
 <body data-bs-theme="dark">
@@ -43,7 +43,7 @@ if (!isset($_COOKIE['uip']) && !isset($_COOKIE['ukey'])) {
             <div class="col-md-4  mt-3">
                 <div class="card border-3 rounded-0 bg-secondary-dark">
                     <div class="card-header">
-                        <h3 class="text-center">ScholarAI bKash Recharge</h3>
+                        <h3 class="text-center">Red Cap bKash Recharge</h3>
                     </div>
                     <div class="card-body bg-white text-black overflow-y-scroll" style="max-height: 600px;">
                         <img src="../res/bkash.jpg" alt="" class="img-fluid">
@@ -66,7 +66,7 @@ if (!isset($_COOKIE['uip']) && !isset($_COOKIE['ukey'])) {
             <div class="col-md-4 mt-3">
                 <div class="card border-3 rounded-0 bg-secondary-dark">
                     <div class="card-header">
-                        <h1 class="text-center">ScholarAI</h1>
+                        <h1 class="text-center">Red Cap</h1>
                     </div>
                     <div class="card-body">
                         <form action="../core/auth_core/signup_core.php" method="post">

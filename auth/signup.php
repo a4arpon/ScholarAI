@@ -15,7 +15,7 @@ if (!isset($_COOKIE['uip'])) {
     <link rel="stylesheet" href="../res/bs/css/bootstrap.min.css">
     <link rel="stylesheet" href="../res/bs/icons/bootstrap-icons.css">
     <link rel="stylesheet" href="../res/style.css">
-    <title>ScholarAI - AI Based Student Access</title>
+    <title>Red Cap - AI Based Student Access</title>
 </head>
 
 <body data-bs-theme="dark">
@@ -24,7 +24,7 @@ if (!isset($_COOKIE['uip'])) {
         <div class="col-md-4 my-3">
             <div class="card border-3 rounded-0 bg-secondary-dark">
                 <div class="card-header">
-                    <h1 class="text-center">ScholarAI</h1>
+                    <h1 class="text-center">Red Cap</h1>
                 </div>
                 <div class="card-body">
                     <form action="../core/auth_core/signup_core.php" method="post">

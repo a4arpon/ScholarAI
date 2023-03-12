@@ -23,7 +23,7 @@ if ($get_data_from_validity->num_rows == 1) {
     if ($validity_current_time < $validity_targeted_time) {
 
         // Query to get the engine details for the user's group
-        $user_group = $user['group'];
+        $user_group = $user['Ugroup'];
         $select_engine = $con->query("SELECT * FROM `openai_engines` WHERE `id`='$user_group'");
 
         // Check if there's a single row in the result

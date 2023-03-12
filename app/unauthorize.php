@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../res/bs/css/bootstrap.min.css">
     <link rel="stylesheet" href="../res/bs/icons/bootstrap-icons.css">
     <link rel="stylesheet" href="../res/style.css">
-    <title>ScholarAI - AI Based Student Access</title>
+    <title>Red Cap - AI Based Student Access</title>
 </head>
 <body data-bs-theme="dark">
     <div class="container py-5">
@@ -32,7 +32,7 @@
                         ?>
                         <div class="alert alert-warning p-5 border-2 text-justify">
                             <h2>
-                                Your ScholarAI account has expired, please recharge. <a href="./recharge.php">Click to recharge.</a>
+                                Your Red Cap account has expired, please recharge. <a href="./recharge.php">Click to recharge.</a>
                             </h2>
                         </div>
                     <?php
@@ -74,7 +74,7 @@
             <div class="col-md-3"></div>
             <div class="col-md-6 text-center">
                 <div class="fs-1">
-                    <span class="fs-4">©2023 Copyright</span> ScholarAI
+                    <span class="fs-4">©2023 Copyright</span> Red Cap
                 </div>
             </div>
             <div class="col-md-3"></div>
